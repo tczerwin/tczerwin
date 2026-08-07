@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Taylor Czerwinski | Portfolio</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f9fa;
+    color: #222;
+}
+
+/* Floating Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 85%;
+    max-width: 1100px;
+
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+
+    border-radius: 50px;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
+    z-index: 1000;
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0057ff;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+
+.nav-links a:hover {
+    color: #0057ff;
+}
+
+
+/* Hero Section */
+.hero {
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #eef4ff,
+        #ffffff
+    );
+
+}
+
+
+.hero h1 {
+    font-size: 60px;
+}
+
+
+.hero p {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #555;
+}
+
+
+.button {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 14px 30px;
+
+    background: #0057ff;
+
+    color:white;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+}
+
+
+/* Sections */
+
+section {
+
+    padding: 100px 10%;
+
+}
+
+
+.card {
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+    margin-top:30px;
+
+}
+
+
+.skills {
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+    gap:20px;
+
+}
+
+
+footer {
+
+    text-align:center;
+
+    padding:40px;
+
+    background:#222;
+
+    color:white;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- Floating Menu -->
+
+<nav class="navbar">
+
+<div class="logo">
+Taylor Czerwinski
+</div>
+
+
+<div class="nav-links">
+
+<a href="#about">About</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+
+
+<!-- Hero -->
+
+<div class="hero">
+
+<div>
+
+<h1>
+Cybersecurity & Data Analyst
+</h1>
+
+<p>
+Computer Science Graduate | Cybersecurity | Data Science | Python
+</p>
+
+
+<a class="button" href="#projects">
+View Projects
+</a>
+
+
+</div>
+
+</div>
+
+
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="card">
+
+<p>
+Computer Science graduate with a minor in Mathematics from Marquette University with experience
+in cybersecurity, database administration, data analytics, and software
+development. Currently working with security tools, identity management,
+SQL databases, and automation.
+</p>
+
+</div>
+
+</section>
+
+
+
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+
+<div class="card">
+
+<h3><a href="https://github.com/tczerwin/Book-Recommendation-Rating-Prediction-System">Book Recommendation & Rating Prediction System</a></h3>
+
+<p>
+This project is a machine learning-powered book recommendation system that combines data from the Goodreads and Open Library APIs to recommend similar books and predict their average Goodreads ratings.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3><a href="https://github.com/tczerwin/MassShootings">Data Professional Salary Prediction</a></h3>
+
+
+<p>
+Machine learning model predicting salaries based on job title,
+experience, location, and technical skills.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3><a href="https://github.com/tczerwin/MassShootings">Mass Shooting Data Analysis</a></h3>
+
+<p>
+Exploratory data analysis project analyzing trends and patterns
+using Python, Pandas, and visualization libraries.
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+
+<div class="skills">
+
+<div class="card">
+Python<br>
+Pandas<br>
+Scikit-Learn
+</div>
+
+
+<div class="card">
+SQL<br>
+SQL Server<br>
+Database Administration
+</div>
+
+
+<div class="card">
+Cybersecurity<br>
+Active Directory<br>
+PowerShell
+</div>
+
+
+<div class="card">
+Java<br>
+Swift<br>
+Git
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="card">
+
+<p>
+<a href="www.linkedin.com/in/taylor-czerwinski-bb0048156">LinkedIn </a>| <a href="https://github.com/tczerwin"> GitHub </a> | <a href="mailto:taylorczerwinski2017@gmail.com"> Email</a>
+</p>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+© 2026 Taylor Czerwinski
+
+</footer>
+
+
+
+</body>
+</html>
