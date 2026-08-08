@@ -180,11 +180,10 @@ I'm continuing to expand my skills in:
 
 ## 📫 Connect With Me
 
-**LinkedIn:** [Taylor Czerwinski](https://www.linkedin.com/in/taylor-czerwinski-bb0048156)
-
-**GitHub:** [@tczerwin](https://github.com/tczerwin)
-
-**Email:** [taylorczerwinski2017@gmail.com](mailto:taylorczerwinski2017@gmail.com)
+* **LinkedIn:** Taylor Czerwinski
+* **GitHub:** [@tczerwin](https://github.com/tczerwin)
+* **Portfolio:** [tczerwin.github.io/tczerwin](https://tczerwin.github.io/tczerwin/)
+* **Email:** [taylorczerwinski2017@gmail.com](mailto:taylorczerwinski2017@gmail.com)
 
 ---
 
