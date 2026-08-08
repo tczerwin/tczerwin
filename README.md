@@ -8,19 +8,19 @@ My experience spans **cybersecurity, database administration, data analytics, ma
 
 ---
 
-## 🚀 About Me
+## About Me
 
-* 🎓 B.S. in Computer Science from **Marquette University**
-* 📐 Minor in Mathematics
-* 🔐 Experience in cybersecurity and information security
-* 📊 Interested in data science, analytics, and machine learning
-* 🗄️ Experience working with SQL databases and database administration
-* 💻 Experience developing applications with Python, Java, Swift, and C++
-* 🛠️ Interested in automation, security, and data-driven solutions
+* B.S. in Computer Science from **Marquette University**
+* Minor in Mathematics
+* Experience in cybersecurity and information security
+* Interested in data science, analytics, and machine learning
+* Experience working with SQL databases and database administration
+* Experience developing applications with Python, Java, Swift, and C++
+* Interested in automation, security, and data-driven solutions
 
 ---
 
-## 💻 Technical Skills
+## Technical Skills
 
 ### Programming Languages
 
@@ -77,9 +77,9 @@ My experience spans **cybersecurity, database administration, data analytics, ma
 
 ---
 
-## 📌 Featured Projects
+## Featured Projects
 
-### 📚 Book Recommendation & Rating Prediction System
+### Book Recommendation & Rating Prediction System
 
 A machine learning-powered book recommendation system combining data from the **Goodreads and Open Library APIs**.
 
@@ -96,7 +96,7 @@ The project includes:
 
 ---
 
-### 💰 Data Professional Salary Prediction
+### Data Professional Salary Prediction
 
 A machine learning project designed to predict salaries based on factors such as:
 
@@ -111,7 +111,7 @@ The project focuses on data preprocessing, categorical encoding, model training,
 
 ---
 
-### 📊 Mass Shooting Data Analysis
+### Mass Shooting Data Analysis
 
 An exploratory data analysis project examining trends and patterns within mass shooting data using Python.
 
@@ -128,7 +128,7 @@ Technologies include:
 
 ---
 
-### ⚾ Brewers × Marquette
+### Brewers × Marquette
 
 A Swift-based mobile application developed as a senior capstone project in collaboration with the **Milwaukee Brewers IT team**.
 
@@ -144,7 +144,7 @@ The application focuses on IT operations and includes functionality such as:
 
 ---
 
-## 🔐 Cybersecurity
+## Cybersecurity
 
 I'm particularly interested in the intersection of **software development, data, and cybersecurity**.
 
@@ -164,21 +164,21 @@ I also developed a Python-based **Dynamic Application Security Testing (DAST)** 
 
 ---
 
-## 📈 Currently Learning
+## Currently Learning
 
 I'm continuing to expand my skills in:
 
-* 🤖 Machine Learning
-* 📊 Data Science
-* 🔐 Cybersecurity
-* 🗄️ Database Administration
-* ☁️ Cloud Technologies
-* 🐍 Advanced Python
-* 📈 Data Analytics
+* Machine Learning
+* Data Science
+* Cybersecurity
+* Database Administration
+* Cloud Technologies
+* Advanced Python
+* Data Analytics
 
 ---
 
-## 📫 Connect With Me
+## Connect With Me
 
 * **LinkedIn:** Taylor Czerwinski
 * **GitHub:** [@tczerwin](https://github.com/tczerwin)
@@ -187,6 +187,6 @@ I'm continuing to expand my skills in:
 
 ---
 
-⭐ Thanks for visiting my GitHub profile!
+Thanks for visiting my GitHub profile!
 
 I'm always interested in learning new technologies, building projects, and finding opportunities to apply software development, cybersecurity, and data science to real-world problems.
