@@ -21,13 +21,16 @@ body {
     color: #222;
 }
 
-/* Floating Navigation Bar */
+/* =========================
+   Floating Navigation Bar
+========================= */
+
 .navbar {
     position: fixed;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    
+
     width: 85%;
     max-width: 1100px;
 
@@ -46,19 +49,16 @@ body {
     z-index: 1000;
 }
 
-
 .logo {
     font-size: 22px;
     font-weight: bold;
     color: #0057ff;
 }
 
-
 .nav-links {
     display: flex;
     gap: 30px;
 }
-
 
 .nav-links a {
     text-decoration: none;
@@ -66,13 +66,15 @@ body {
     font-weight: 600;
 }
 
-
 .nav-links a:hover {
     color: #0057ff;
 }
 
 
-/* Hero Section */
+/* =========================
+   Hero Section
+========================= */
+
 .hero {
 
     height: 100vh;
@@ -81,28 +83,73 @@ body {
     justify-content: center;
     align-items: center;
 
-    text-align: center;
-
     background: linear-gradient(
         135deg,
         #eef4ff,
         #ffffff
     );
-
 }
 
+.hero-content {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 50px;
+
+    max-width: 1100px;
+
+    width: 90%;
+}
+
+.hero-text {
+
+    max-width: 700px;
+
+    text-align: left;
+}
 
 .hero h1 {
     font-size: 60px;
 }
 
-
 .hero p {
+
     margin-top: 20px;
+
     font-size: 22px;
+
     color: #555;
 }
 
+
+/* =========================
+   Profile Photo
+========================= */
+
+.hero-photo {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 10px solid white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.hero-photo img {
+    width: 130%;
+    height: 130%;
+    object-fit: cover;
+    object-position: center -4%;
+    transform: translate(-11.5%, -11.5%);
+}
+
+/* =========================
+   Buttons
+========================= */
 
 .button {
 
@@ -114,16 +161,23 @@ body {
 
     background: #0057ff;
 
-    color:white;
+    color: white;
 
-    border-radius:30px;
+    border-radius: 30px;
 
-    text-decoration:none;
+    text-decoration: none;
+}
+
+.button:hover {
+
+    background: #0045cc;
 
 }
 
 
-/* Sections */
+/* =========================
+   Sections
+========================= */
 
 section {
 
@@ -132,44 +186,170 @@ section {
 }
 
 
+/* =========================
+   Cards
+========================= */
+
 .card {
 
-    background:white;
+    background: white;
 
-    padding:30px;
+    padding: 30px;
 
-    border-radius:20px;
+    border-radius: 20px;
 
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.1);
 
-    margin-top:30px;
+    margin-top: 30px;
+}
+
+.card h3 {
+
+    margin-bottom: 15px;
 
 }
 
+.card h3 a {
+
+    color: #0057ff;
+
+    text-decoration: none;
+}
+
+.card h3 a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =========================
+   Skills
+========================= */
 
 .skills {
 
-    display:grid;
+    display: grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
 
-    gap:20px;
-
+    gap: 20px;
 }
 
+
+/* =========================
+   Footer
+========================= */
 
 footer {
 
-    text-align:center;
+    text-align: center;
 
-    padding:40px;
+    padding: 40px;
 
-    background:#222;
+    background: #222;
 
-    color:white;
+    color: white;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        width: 95%;
+
+        padding: 12px 20px;
+
+    }
+
+    .logo {
+
+        font-size: 18px;
+
+    }
+
+    .nav-links {
+
+        gap: 12px;
+
+    }
+
+    .nav-links a {
+
+        font-size: 14px;
+
+    }
+
+
+    .hero-content {
+
+        flex-direction: column-reverse;
+
+        gap: 25px;
+
+        text-align: center;
+
+    }
+
+    .hero-text {
+
+        text-align: center;
+
+    }
+
+    .hero h1 {
+
+        font-size: 40px;
+
+    }
+
+    .hero p {
+
+        font-size: 18px;
+
+    }
+
+    .hero-photo img {
+
+        width: 140px;
+
+        height: 140px;
+
+    }
 
 }
 
+
+/* =========================
+   Resume Button
+========================= */
+
+.resume-button {
+
+    margin-left: 10px;
+
+    background: white;
+
+    color: #0057ff;
+
+    border: 2px solid #0057ff;
+
+}
+
+.resume-button:hover {
+
+    background: #0057ff;
+
+    color: white;
+
+}
 
 </style>
 
@@ -179,187 +359,344 @@ footer {
 <body>
 
 
-<!-- Floating Menu -->
+<!-- =========================
+     Navigation
+========================= -->
 
 <nav class="navbar">
 
-<div class="logo">
-Taylor Czerwinski
-</div>
+    <div class="logo">
+        Taylor Czerwinski
+    </div>
 
+    <div class="nav-links">
 
-<div class="nav-links">
+        <a href="#about">
+            About
+        </a>
 
-<a href="#about">About</a>
+        <a href="#projects">
+            Projects
+        </a>
 
-<a href="#projects">Projects</a>
+        <a href="#skills">
+            Skills
+        </a>
 
-<a href="#skills">Skills</a>
+        <a href="#contact">
+            Contact
+        </a>
 
-<a href="#contact">Contact</a>
-
-</div>
+    </div>
 
 </nav>
 
 
 
-<!-- Hero -->
+<!-- =========================
+     Hero
+========================= -->
 
 <div class="hero">
 
-<div>
+    <div class="hero-content">
 
-<h1>
-Computer Science Graduate Building Secure Data-Driven Solutions
-</h1>
+        <div class="hero-text">
 
-<p>
-Computer Science Graduate | Cybersecurity | Data Science | Python
-</p>
+            <h1>
+                Computer Science Graduate Building Secure Data-Driven Solutions
+            </h1>
+
+            <p>
+                Computer Science Graduate | Cybersecurity | Data Science | Python
+            </p>
+
+            <a class="button" href="#projects">
+                View Projects
+            </a>
+
+            <a
+                class="button resume-button"
+                href="resume.pdf"
+                download
+            >
+                Download Resume
+            </a>
+
+        </div>
 
 
-<a class="button" href="#projects">
-View Projects
-</a>
+        <!-- Profile Photo -->
 
+        <div class="hero-photo">
+
+            <img
+                src="ProfPic2026.PNG"
+                alt="Taylor Czerwinski"
+            >
+
+        </div>
+
+    </div>
 
 </div>
 
-</div>
 
 
+<!-- =========================
+     About
+========================= -->
 
 <section id="about">
 
-<h2>About Me</h2>
+    <h2>
+        About Me
+    </h2>
 
-<div class="card">
+    <div class="card">
 
-<p>
-Computer Science graduate with a minor in Mathematics from Marquette University with experience
-in cybersecurity, database administration, data analytics, and software
-development. Currently working with security tools, identity management,
-SQL databases, and automation.
-</p>
+        <p>
+            Computer Science graduate with a minor in Mathematics
+            from Marquette University with experience in cybersecurity,
+            database administration, data analytics, and software
+            development. Currently working with security tools,
+            identity management, SQL databases, and automation.
+        </p>
+        <br>
+        <p>
+            I currently work at Children’s Hospital of Wisconsin, where I use tools such as Active Directory, SentinelOne, IdentityNow, Exabeam, PowerShell, and Proofpoint to troubleshoot and resolve technical support tickets. I also assist with SQL Server installation, configuration, and maintenance to support secure application and database environments.
+        </p>
+        <br>
+        <p>
+            As a primary point of contact for initial technical triage, I investigate and resolve issues while maintaining strict confidentiality. My responsibilities also include user provisioning, access reviews, password resets, and supporting secure identity and access management processes.
+        </p>
 
-</div>
+    </div>
 
 </section>
 
 
 
+<!-- =========================
+     Projects
+========================= -->
 
 <section id="projects">
 
-<h2>Projects</h2>
+    <h2>
+        Projects
+    </h2>
 
 
-<div class="card">
+    <div class="card">
 
-<h3><a href="https://github.com/tczerwin/Book-Recommendation-Rating-Prediction-System">Book Recommendation & Rating Prediction System</a></h3>
+        <h3>
+            <a href="https://github.com/tczerwin/Book-Recommendation-Rating-Prediction-System">
 
-<p>
-This project is a machine learning-powered book recommendation system that combines data from the Goodreads and Open Library APIs to recommend similar books and predict their average Goodreads ratings.
-</p>
+                Book Recommendation & Rating Prediction System
 
-</div>
+            </a>
+        </h3>
 
+        <p>
+            This project is a machine learning-powered book
+            recommendation system that combines data from the
+            Goodreads and Open Library APIs to recommend similar
+            books and predict their average Goodreads ratings.
+        </p>
 
-<div class="card">
-
-<h3><a href="https://github.com/tczerwin/Data-Scientists-Salary-Prediction-Model">Data Professional Salary Prediction</a></h3>
-
-
-<p>
-Machine learning model predicting salaries based on job title,
-experience, location, and technical skills.
-</p>
-
-</div>
+    </div>
 
 
-<div class="card">
+    <div class="card">
 
-<h3><a href="https://github.com/tczerwin/MassShootings">Mass Shooting Data Analysis</a></h3>
+        <h3>
 
-<p>
-Exploratory data analysis project analyzing trends and patterns
-using Python, Pandas, and visualization libraries.
-</p>
+            <a href="https://github.com/tczerwin/Data-Scientists-Salary-Prediction-Model">
 
-</div>
+                Data Professional Salary Prediction
+
+            </a>
+
+        </h3>
+
+        <p>
+
+            Machine learning model predicting salaries based on
+            job title, experience, location, and technical skills.
+
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>
+
+            <a href="https://github.com/tczerwin/MassShootings">
+
+                Mass Shooting Data Analysis
+
+            </a>
+
+        </h3>
+
+        <p>
+
+            Exploratory data analysis project analyzing trends
+            and patterns using Python, Pandas, and visualization
+            libraries.
+
+        </p>
+
+    </div>
 
 
 </section>
 
 
 
+<!-- =========================
+     Skills
+========================= -->
 
 <section id="skills">
 
-<h2>Technical Skills</h2>
+    <h2>
+        Technical Skills
+    </h2>
 
 
-<div class="skills">
-
-<div class="card">
-Python<br>
-Pandas<br>
-Scikit-Learn
-</div>
+    <div class="skills">
 
 
-<div class="card">
-SQL<br>
-SQL Server<br>
-Database Administration
-</div>
+        <div class="card">
+
+            <strong>Python & Data Science</strong>
+
+            <br><br>
+
+            Python<br>
+            Pandas<br>
+            NumPy<br>
+            Scikit-Learn
+
+        </div>
 
 
-<div class="card">
-Cybersecurity<br>
-Active Directory<br>
-PowerShell
-</div>
+        <div class="card">
+
+            <strong>Databases</strong>
+
+            <br><br>
+
+            SQL<br>
+            SQLite<br>
+            SQL Server<br>
+            Database Administration
+
+        </div>
 
 
-<div class="card">
-Java<br>
-Swift<br>
-Git
-</div>
+        <div class="card">
+
+            <strong>Cybersecurity</strong>
+
+            <br><br>
+
+            Active Directory<br>
+            PowerShell<br>
+            Proofpoint<br>
+            SentinelOne<br>
+            IdentityNow<br>
+            Exabeam
+
+        </div>
 
 
-</div>
+        <div class="card">
+
+            <strong>Programming</strong>
+
+            <br><br>
+
+            Java<br>
+            Swift<br>
+            C++<br>
+            Git
+
+        </div>
+
+
+    </div>
 
 </section>
 
 
 
+<!-- =========================
+     Contact
+========================= -->
 
 <section id="contact">
 
-<h2>Contact</h2>
+    <h2>
+        Contact
+    </h2>
 
-<div class="card">
+    <div class="card">
 
-<p>
-<a href="https://www.linkedin.com/in/taylor-czerwinski-bb0048156">LinkedIn </a>| <a href="https://github.com/tczerwin"> GitHub </a> | <a href="mailto:taylorczerwinski2017@gmail.com"> Email</a>
-</p>
+        <p>
 
-</div>
+            <a href="https://www.linkedin.com/in/taylor-czerwinski-bb0048156">
+                LinkedIn
+            </a>
+
+            |
+
+            <a href="https://github.com/tczerwin">
+                GitHub
+            </a>
+
+            |
+
+            <a href="mailto:taylorczerwinski2017@gmail.com">
+                Email
+            </a>
+
+            |
+
+            <a href="https://tczerwin.github.io/tczerwin/">
+                Website
+            </a>
+
+            |
+
+            <a
+                href="resume.pdf"
+                download
+            >
+                Download Resume
+            </a>
+
+        </p>
+
+    </div>
 
 </section>
 
 
 
+<!-- =========================
+     Footer
+========================= -->
+
 <footer>
 
-© 2026 Taylor Czerwinski
+    © 2026 Taylor Czerwinski
 
 </footer>
-
 
 
 </body>
