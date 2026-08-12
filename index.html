@@ -19,6 +19,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f8f9fa;
     color: #222;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background: #1a1a1a;
+    color: #e0e0e0;
 }
 
 /* =========================
@@ -47,6 +53,19 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 
     z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .navbar {
+    background: rgba(40, 40, 40, 0.95);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .logo {
@@ -64,9 +83,34 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 600;
+    transition: color 0.3s;
+}
+
+body.dark-mode .nav-links a {
+    color: #e0e0e0;
 }
 
 .nav-links a:hover {
+    color: #0057ff;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 8px 12px;
+}
+
+body.dark-mode .dark-mode-toggle {
+    color: #e0e0e0;
+}
+
+.dark-mode-toggle:hover {
     color: #0057ff;
 }
 
@@ -87,6 +131,15 @@ body {
         135deg,
         #eef4ff,
         #ffffff
+    );
+    transition: background 0.3s;
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(
+        135deg,
+        #2a2a2a,
+        #1a1a1a
     );
 }
 
@@ -123,6 +176,11 @@ body {
     font-size: 22px;
 
     color: #555;
+    transition: color 0.3s;
+}
+
+body.dark-mode .hero p {
+    color: #aaa;
 }
 
 
@@ -137,15 +195,20 @@ body {
     border: 10px solid white;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     overflow: hidden;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .hero-photo {
+    border-color: #333;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
 }
 
 .hero-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 20%; 
+    object-position: center 20%;
 }
-
 
 
 
@@ -169,6 +232,7 @@ body {
     border-radius: 30px;
 
     text-decoration: none;
+    transition: background 0.3s;
 }
 
 .button:hover {
@@ -185,7 +249,19 @@ body {
 section {
 
     padding: 100px 10%;
+    transition: background-color 0.3s;
+}
 
+body.dark-mode section {
+    background: #1a1a1a;
+}
+
+section h2 {
+    transition: color 0.3s;
+}
+
+body.dark-mode section h2 {
+    color: #e0e0e0;
 }
 
 
@@ -205,6 +281,13 @@ section {
         0 5px 20px rgba(0,0,0,0.1);
 
     margin-top: 30px;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+body.dark-mode .card {
+    background: #2a2a2a;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    color: #e0e0e0;
 }
 
 .card h3 {
@@ -226,43 +309,58 @@ section {
 
 }
 
-.project-year {
+.card a {
+    color: #0057ff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
 
-    font-weight: 400;
-    color: #666;
-    font-size: 0.85em;
+body.dark-mode .card a {
+    color: #66b3ff;
+}
 
+.card a:hover {
+    text-decoration: underline;
 }
 
 .card-soon {
-
     opacity: 0.85;
-
     border: 2px dashed #cfd8e6;
-
     box-shadow: none;
+}
 
+body.dark-mode .card-soon {
+    border-color: #444;
+}
+
+.project-year {
+    font-weight: 400;
+    color: #666;
+    font-size: 0.85em;
+    transition: color 0.3s;
+}
+
+body.dark-mode .project-year {
+    color: #999;
 }
 
 .badge-soon {
-
     display: inline-block;
-
     margin-left: 10px;
-
     padding: 4px 12px;
-
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: #0057ff;
     background: #eef4ff;
-
     border-radius: 20px;
-
     vertical-align: middle;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode .badge-soon {
+    background: #1a3a5c;
 }
 
 
@@ -294,6 +392,11 @@ footer {
     background: #222;
 
     color: white;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode footer {
+    background: #0a0a0a;
 }
 
 
@@ -390,6 +493,17 @@ footer {
 
 }
 
+body.dark-mode .resume-button {
+    background: transparent;
+    color: #66b3ff;
+    border: 2px solid #66b3ff;
+}
+
+body.dark-mode .resume-button:hover {
+    background: #0057ff;
+    color: white;
+}
+
 </style>
 
 </head>
@@ -404,28 +518,34 @@ footer {
 
 <nav class="navbar">
 
-    <div class="logo">
-        Taylor Czerwinski
-    </div>
+    <div class="navbar-wrapper">
+        <div class="logo">
+            Taylor Czerwinski
+        </div>
 
-    <div class="nav-links">
+        <div class="nav-links">
 
-        <a href="#about">
-            About
-        </a>
+            <a href="#about">
+                About
+            </a>
 
-        <a href="#projects">
-            Projects
-        </a>
+            <a href="#projects">
+                Projects
+            </a>
 
-        <a href="#skills">
-            Skills
-        </a>
+            <a href="#skills">
+                Skills
+            </a>
 
-        <a href="#contact">
-            Contact
-        </a>
+            <a href="#contact">
+                Contact
+            </a>
 
+        </div>
+
+        <button class="dark-mode-toggle" id="darkModeToggle" title="Toggle dark mode">
+            Dark Mode
+        </button>
     </div>
 
 </nav>
@@ -503,7 +623,7 @@ footer {
         </p>
         <br>
         <p>
-            I currently work at Children’s Hospital of Wisconsin, where I use tools such as Active Directory, SentinelOne, IdentityNow, Exabeam, PowerShell, and Proofpoint to troubleshoot and resolve technical support tickets. I also assist with SQL Server installation, configuration, and maintenance to support secure application and database environments.
+            I currently work at Children's Hospital of Wisconsin, where I use tools such as Active Directory, SentinelOne, IdentityNow, Exabeam, PowerShell, and Proofpoint to troubleshoot and resolve technical support tickets. I also assist with SQL Server installation, configuration, and maintenance to support secure application and database environments.
         </p>
         <br>
         <p>
@@ -535,7 +655,6 @@ footer {
                 Book Recommendation & Rating Prediction System
 
             </a>
-            <span class="project-year">— 2026</span>
         </h3>
 
         <p>
@@ -557,7 +676,6 @@ footer {
                 Data Professional Salary Prediction
 
             </a>
-            <span class="project-year">— 2024</span>
 
         </h3>
 
@@ -580,7 +698,6 @@ footer {
                 Mass Shooting Data Analysis
 
             </a>
-            <span class="project-year">— 2025</span>
 
         </h3>
 
@@ -760,6 +877,32 @@ footer {
 
 </footer>
 
+
+<script>
+// Dark mode toggle functionality
+const darkModeToggle = document.getElementById('darkModeToggle');
+
+// Check if dark mode preference is saved
+const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+// Apply saved preference on page load
+if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+    darkModeToggle.textContent = 'Light Mode';
+}
+
+// Toggle dark mode when button is clicked
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const isNowDarkMode = document.body.classList.contains('dark-mode');
+
+    // Update button text
+    darkModeToggle.textContent = isNowDarkMode ? 'Light Mode' : 'Dark Mode';
+
+    // Save preference to localStorage
+    localStorage.setItem('darkMode', isNowDarkMode);
+});
+</script>
 
 </body>
 </html>
