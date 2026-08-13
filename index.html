@@ -907,10 +907,12 @@ darkModeToggle.addEventListener('click', () => {
 });
 
 // Open resume in new tab when clicked
-document.querySelectorAll('a[href="resume.pdf"]').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        window.open('resume.pdf', '_blank');
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[href="resume.pdf"]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.open('resume.pdf', '_blank');
+        });
     });
 });
 
