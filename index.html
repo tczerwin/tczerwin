@@ -905,6 +905,15 @@ darkModeToggle.addEventListener('click', () => {
     // Save preference to localStorage
     localStorage.setItem('darkMode', isNowDarkMode);
 });
+
+// Open resume in new tab when clicked
+document.querySelectorAll('a[href="resume.pdf"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.open('resume.pdf', '_blank');
+    });
+});
+
 </script>
 
 </body>
