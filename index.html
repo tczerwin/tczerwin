@@ -291,13 +291,25 @@ body.dark-mode section h2 {
         0 5px 20px rgba(0,0,0,0.1);
 
     margin-top: 30px;
-    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s, transform 0.3s, border-color 0.3s;
+    border: 2px solid transparent;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 87, 255, 0.2);
+    border-color: #0057ff;
 }
 
 body.dark-mode .card {
     background: #2a2a2a;
     box-shadow: 0 5px 20px rgba(0,0,0,0.3);
     color: #e0e0e0;
+}
+
+body.dark-mode .card:hover {
+    box-shadow: 0 15px 40px rgba(0, 87, 255, 0.4);
+    border-color: #66b3ff;
 }
 
 .card h3 {
@@ -339,8 +351,19 @@ body.dark-mode .card a {
     box-shadow: none;
 }
 
+.card-soon:hover {
+    opacity: 1;
+    border-color: #0057ff;
+    box-shadow: 0 10px 30px rgba(0, 87, 255, 0.15);
+}
+
 body.dark-mode .card-soon {
     border-color: #444;
+}
+
+body.dark-mode .card-soon:hover {
+    border-color: #66b3ff;
+    opacity: 1;
 }
 
 .project-year {
@@ -371,6 +394,40 @@ body.dark-mode .project-year {
 
 body.dark-mode .badge-soon {
     background: #1a3a5c;
+}
+
+
+/* =========================
+   Project Images
+========================= */
+
+.project-images {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.project-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.project-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 87, 255, 0.2);
+}
+
+body.dark-mode .project-images img {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .project-images img:hover {
+    box-shadow: 0 10px 25px rgba(0, 87, 255, 0.4);
 }
 
 
@@ -609,7 +666,7 @@ body.dark-mode .resume-button:hover {
         <div class="hero-photo">
 
             <img
-                src="ProfPic2026.png"
+                src="img/ProfPic2026.png"
                 alt="Taylor Czerwinski"
             >
 
@@ -684,6 +741,11 @@ body.dark-mode .resume-button:hover {
             books and predict their average Goodreads ratings.
         </p>
 
+        <div class="project-images">
+            <img src="img/book_rec.png" alt="Book Recommendation System">
+            <img src="img/book_rating.png" alt="Rating Prediction Model">
+        </div>
+
     </div>
 
 
@@ -706,6 +768,11 @@ body.dark-mode .resume-button:hover {
             job title, experience, location, and technical skills.
 
         </p>
+
+        <div class="project-images">
+            <img src="img/avg_salary.png" alt="Average Salary Analysis">
+            <img src="img/ds_heatmap.png" alt="Data Science Heatmap">
+        </div>
 
     </div>
 
@@ -730,6 +797,10 @@ body.dark-mode .resume-button:hover {
             libraries.
 
         </p>
+
+        <div class="project-images">
+            <img src="img/stategraph2022.png" alt="Mass Shootings by State 2022">
+        </div>
 
     </div>
 
