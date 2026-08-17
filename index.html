@@ -418,7 +418,6 @@ body.dark-mode .badge-soon {
 }
 
 .project-images img:hover {
-    transform: scale(1.05);
     box-shadow: 0 10px 25px rgba(0, 87, 255, 0.2);
 }
 
@@ -805,22 +804,27 @@ body.dark-mode .resume-button:hover {
     </div>
 
 
-    <div class="card card-soon">
+    <div class="card">
 
         <h3>
-            Pokédex App
+            <a href="https://github.com/tczerwin/Pokedex/tree/main">
+                Pokédex App
+            </a>
             <span class="project-year">— 2026</span>
-            <span class="badge-soon">Coming Soon</span>
         </h3>
 
         <p>
 
-            A Python + PyQt5 desktop Pokédex: look up any Pokémon's
-            stats on a trading-card-style profile, browse the top 10
-            Pokémon of a given type, and get recommended raid counters.
-            Backed by a SQL database built from the PokéAPI.
+            A Python + PyQt5 desktop application featuring a SQLite database populated from the PokéAPI. Implements signal-slot connections for event handling, custom UI widgets with absolute positioning, type-advantage algorithms, and persistent data storage. Includes team serialization (JSON), PDF generation with ReportLab, and real-time audio playback with pygame mixer.
 
         </p>
+
+        <div class="project-video">
+            <video width="100%" height="auto" controls style="border-radius: 12px; margin-top: 20px;">
+                <source src="img/Pokemon_Vid.mov" type="video/quicktime">
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
     </div>
 
